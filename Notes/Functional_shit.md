@@ -1,6 +1,36 @@
 # Functional shit
 
-## **PH**unctional **P**rogramming
+## PHP: ˜˜Hypertext Preprocessor˜˜
+
+## PHP: **PH**unctional **P**rogramming
+
+## PHP 5.3+ (OOP + FP)
+
+Closure class was added to the language.
+
+## Types
+
+```php
+function increment($counter) { 
+	return ++$counter; 
+}
+
+increment("Run time error is awesome"); //-> ?????
+```
+
+## PHP 7+
+
+Strict types 
+
+```php
+declare(strict_types = 1);
+```
+
+Hello FP!
+
+## Functional programming? 
+
+input -> func f() -> output -> func g() -> output
 
 Pure functions fix side effects
 
@@ -16,7 +46,7 @@ Luis Atencio. “Functional PHP”.
 ## Square each element in the array
 
 ```php
-$array = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+$array = range(0, 10);
 
 for($i = 0; $i < count($array); $i++) {
 	$array[$i] = pow($array[$i], 2);
@@ -27,8 +57,8 @@ $array; //-> [0, 1, 4, 9, 16, 25, 36, 49, 64, 81]
 
 ## FP way
 
-```
-$array = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+```php
+$array = range(0, 10);
 
 $square = function (int $num): int {
 	return pow($num, 2);
@@ -44,5 +74,7 @@ $array; //-> [0, 1, 4, 9, 16, 25, 36, 49, 64, 81]
 One of the main causes of bugs in software is when the state of an object inadvertently changes, or its reference becomes null. Immutable objects can be passed around to any function and their states will always remain the same. You can count on having the peace mind that state is only permitted to grow but never change. It eases the “cognitive load” (the amount of state to keep track of in your head) of any single component of your system. 
 
 Immutable data structures are important in shared memory multithreaded applications. We won’t talk much about concurrent processing in this book because PHP processes run in isolation for the most part. Now, whether designing for parallelism or not, stateless objects is a widely used pattern seen in many common PHP deployments. For example, as a best practice, Symfony services (or service objects) should always be stateless. A service shouldn’t persist any state and provide a set of transient functions that take in the domain its working on, perform some kind of computation of business logic, and return the result.
+
+## High order functions
 
 [Introduction to Haskell](https://youtu.be/1jZ7j21g028)

@@ -1,12 +1,12 @@
 # Functional shit
 
-## PHP: ˜˜Hypertext Preprocessor˜˜
+## PHP: ~~Hypertext Preprocessor~~
 
-## PHP: **PH**unctional **P**rogramming
+## **PH**unctional **P**rogramming
 
 ## PHP 5.3+ (OOP + FP)
 
-Closure class was added to the language.
+`Closure class was added to the language.`
 
 ## Types
 
@@ -69,6 +69,13 @@ array_map($square, $array);  //-> [0, 1, 4, 9, 16, 25, 36, 49, 64, 81]
 $array; //-> [0, 1, 4, 9, 16, 25, 36, 49, 64, 81]
 ```
 
+### Pros
+
+- Easy to read
+- Easy to test
+- Easy to parallelize
+- Modular out of the box
+
 ## Coding with immutable variables has many benefits such as:
 
 One of the main causes of bugs in software is when the state of an object inadvertently changes, or its reference becomes null. Immutable objects can be passed around to any function and their states will always remain the same. You can count on having the peace mind that state is only permitted to grow but never change. It eases the “cognitive load” (the amount of state to keep track of in your head) of any single component of your system. 
@@ -77,4 +84,7 @@ Immutable data structures are important in shared memory multithreaded applicati
 
 ## High order functions
 
+[Why functional programming matters](http://www.cse.chalmers.se/~rjmh/Papers/whyfp.html)
+
 [Introduction to Haskell](https://youtu.be/1jZ7j21g028)
+

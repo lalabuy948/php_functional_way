@@ -1,0 +1,15 @@
+{
+  "name": "PHunctionalProgramming",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "node_modules/.bin/cleaver index.md"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cleaver": "^0.8.7"
+  }
+}

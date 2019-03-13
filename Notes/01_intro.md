@@ -3,7 +3,7 @@
 
 ```
 input -> f() -> output -> g() -> output 
-	=> intput -> f(g()) -> output
+	=> input -> f(g()) -> output
 ```
 
 2. State of the world 
@@ -25,4 +25,4 @@ World -> (World, A)
 4. Language versions
 
 - Closures were added to the PHP 5.3
-- "strong typization" stict_type was added
+- "strong typization" stict_type was added to PHP 7

@@ -7,3 +7,46 @@ output: index.html
 controls: false
 
 --
+
+PHP: ~~Hypertext Preprocessor~~
+
+--
+
+**PH**unctional **P**rogramming
+
+-- 
+
+## PHP 5.3+ (OOP + FP)
+
+`Closure class was added to the language.`
+
+--
+
+## Types
+
+```php
+function increment($counter) { 
+	return ++$counter; 
+}
+
+increment("Run time error is awesome"); //-> ?????
+```
+
+--
+
+## PHP 7+
+
+Strict types
+
+```php
+declare(strict_types = 1);
+```
+
+Hello FP!
+
+--
+
+## Functional programming? 
+
+--
+

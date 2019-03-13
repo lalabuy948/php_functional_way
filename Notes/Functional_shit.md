@@ -1,8 +1,6 @@
-# Functional shit
+# PHP: ~~Hypertext Preprocessor~~
 
-## PHP: ~~Hypertext Preprocessor~~
-
-## **PH**unctional **P**rogramming
+# **PH**unctional **P**rogramming
 
 ## PHP 5.3+ (OOP + FP)
 
@@ -32,6 +30,8 @@ Hello FP!
 
 input -> func f() -> output -> func g() -> output
 
+### State of the world @TODO
+
 Pure functions fix side effects
 
 Functional programming is based on the premise that you will build immutable programs based on pure functions as the building blocks of your business logic. A pure function has the following qualities:
@@ -43,7 +43,9 @@ Functional programming is based on the premise that you will build immutable pro
 
 Luis Atencio. “Functional PHP”. 
 
-## Square each element in the array
+## Examples
+
+### Square each element in the array
 
 ```php
 $array = range(0, 10);
@@ -54,8 +56,6 @@ for($i = 0; $i < count($array); $i++) {
 
 $array; //-> [0, 1, 4, 9, 16, 25, 36, 49, 64, 81]
 ```
-
-## FP way
 
 ```php
 $array = range(0, 10);
@@ -68,6 +68,19 @@ array_map($square, $array);  //-> [0, 1, 4, 9, 16, 25, 36, 49, 64, 81]
 
 $array; //-> [0, 1, 4, 9, 16, 25, 36, 49, 64, 81]
 ```
+--
+```
+$sum = 0;
+
+for($i = 1; $i <= 10; $i++) {
+   $sum += $i;
+}
+
+// $sum -> 55
+```
+```
+array_sum(range(1, 10));
+```
 
 ### Pros
 
@@ -78,9 +91,36 @@ $array; //-> [0, 1, 4, 9, 16, 25, 36, 49, 64, 81]
 
 ## Coding with immutable variables has many benefits such as:
 
-One of the main causes of bugs in software is when the state of an object inadvertently changes, or its reference becomes null. Immutable objects can be passed around to any function and their states will always remain the same. You can count on having the peace mind that state is only permitted to grow but never change. It eases the “cognitive load” (the amount of state to keep track of in your head) of any single component of your system. 
+- Simpler to test
+- No invalid state
+- Thread safety
+- More readable
+- Maintainable code
 
-Immutable data structures are important in shared memory multithreaded applications. We won’t talk much about concurrent processing in this book because PHP processes run in isolation for the most part. Now, whether designing for parallelism or not, stateless objects is a widely used pattern seen in many common PHP deployments. For example, as a best practice, Symfony services (or service objects) should always be stateless. A service shouldn’t persist any state and provide a set of transient functions that take in the domain its working on, perform some kind of computation of business logic, and return the result.
+One of the main causes of bugs in software is when the state of an object surprising changes, or its reference becomes null. Immutable objects can be passed around to any function and their states will always remain the same. You can count on having the peace mind that state is only permitted to grow but never change. It eases the “cognitive load” (the amount of state to keep track of in your head) of any single component of your system. 
+
+Immutable data structures are important in shared memory multithreaded applications. We won’t talk much about concurrent processing in this talk because PHP processes run in isolation for the most part. Now, whether designing for parallelism or not, stateless objects is a widely used pattern seen in many common PHP deployments. For example, as a best practice, Symfony services (or service objects) should always be stateless. A service shouldn’t persist any state and provide a set of transient functions that take in the domain its working on, perform some kind of computation of business logic, and return the result.
+
+## Lambda
+
+```
+$add_one = function($x) {
+   return $x + 1;
+};
+echo $add_one(4); // -> 5
+```
+
+## Closures
+
+```
+$name = 'Haskell';
+
+$my_first_closure = function() use ($name) {
+   return "The first closure written by $name";
+};
+
+echo $my_first_closure();
+```
 
 ## High order functions
 

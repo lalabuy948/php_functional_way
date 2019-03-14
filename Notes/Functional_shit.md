@@ -112,11 +112,11 @@ echo $add_one(4); // -> 5
 
 ## Closures
 
-```
-$name = 'Haskell';
+```php
+$name = 'PHP';
 
-$my_first_closure = function() use ($name) {
-   return "The first closure written by $name";
+$my_first_closure = function() use ($name):string {
+    return "The first closure written in $name";
 };
 
 echo $my_first_closure();

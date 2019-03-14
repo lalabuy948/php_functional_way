@@ -1,3 +1,3 @@
 # PHunctional Programming
 
-`Serve index.html to see the presentation
+`Serve index.html to see the presentation`

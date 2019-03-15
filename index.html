@@ -376,7 +376,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
   </div>
   <div class="slide hidden" id="slide-3">
     <section class="slide-content"><h1 id="php-">PHP:</h1>
-<h2 id="phunctional-programming"><strong>PH</strong><em>unctional</em> <strong>P</strong><em>rogramming</em></h2>
+<h2 id="phunctional-programming"><strong>PH</strong>unctional <strong>P</strong>rogramming</h2>
 </section>
   </div>
   <div class="slide hidden" id="slide-4">
@@ -523,40 +523,32 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 <p><strong>PHP 5.3</strong></p>
 <p>Closure was added to the language</p>
 <p><strong>PHP 7</strong></p>
-<p>&quot;strong typization&quot; strict_type was added to language</p>
+<p>&quot;strong typization&quot; strict_type was added to the language</p>
 </section>
   </div>
   <div class="slide hidden" id="slide-22">
-    <section class="slide-content"><h3 id="language-versions">Language versions</h3>
-<p><strong>PHP 5.3</strong></p>
-<p>Closure was added to the language</p>
-<p><strong>PHP 7</strong></p>
-<p>&quot;strong typization&quot; strict_type was added to language</p>
-</section>
-  </div>
-  <div class="slide hidden" id="slide-23">
     <section class="slide-content"><p><img src="static/fpmem.png" width="400" style="margin-left: 25%"></p>
 </section>
   </div>
-  <div class="slide hidden" id="slide-24">
+  <div class="slide hidden" id="slide-23">
     <section class="slide-content"><h3 id="let-s-jump-into-a-code">Let&#39;s jump into a code</h3>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-24">
+    <section class="slide-content"><h3 id="square-each-element-in-the-array">Square each element in the array</h3>
 </section>
   </div>
   <div class="slide hidden" id="slide-25">
     <section class="slide-content"><h3 id="square-each-element-in-the-array">Square each element in the array</h3>
+<p>OOP way</p>
+<pre><code class="lang-php">$array = [<span class="hljs-number">0</span>, <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>, <span class="hljs-number">6</span>, <span class="hljs-number">7</span>, <span class="hljs-number">8</span>, <span class="hljs-number">9</span>];
+</code></pre>
 </section>
   </div>
   <div class="slide hidden" id="slide-26">
     <section class="slide-content"><h3 id="square-each-element-in-the-array">Square each element in the array</h3>
 <p>OOP way</p>
-<pre><code class="lang-php">$array = [<span class="hljs-number">0</span>, <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>, <span class="hljs-number">6</span>, <span class="hljs-number">7</span>, <span class="hljs-number">8</span>, <span class="hljs-number">9</span>]; <span class="hljs-comment">//-&gt; [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]</span>
-</code></pre>
-</section>
-  </div>
-  <div class="slide hidden" id="slide-27">
-    <section class="slide-content"><h3 id="square-each-element-in-the-array">Square each element in the array</h3>
-<p>OOP way</p>
-<pre><code class="lang-php">$array = [<span class="hljs-number">0</span>, <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>, <span class="hljs-number">6</span>, <span class="hljs-number">7</span>, <span class="hljs-number">8</span>, <span class="hljs-number">9</span>]; <span class="hljs-comment">//-&gt; [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]</span>
+<pre><code class="lang-php">$array = [<span class="hljs-number">0</span>, <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>, <span class="hljs-number">6</span>, <span class="hljs-number">7</span>, <span class="hljs-number">8</span>, <span class="hljs-number">9</span>];
 
 <span class="hljs-keyword">for</span>($i = <span class="hljs-number">0</span>; $i &lt; count($array); $i++) {
     $array[$i] = pow($array[$i], <span class="hljs-number">2</span>);
@@ -564,10 +556,10 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 </code></pre>
 </section>
   </div>
-  <div class="slide hidden" id="slide-28">
+  <div class="slide hidden" id="slide-27">
     <section class="slide-content"><h3 id="square-each-element-in-the-array">Square each element in the array</h3>
 <p>OOP way</p>
-<pre><code class="lang-php">$array = [<span class="hljs-number">0</span>, <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>, <span class="hljs-number">6</span>, <span class="hljs-number">7</span>, <span class="hljs-number">8</span>, <span class="hljs-number">9</span>]; <span class="hljs-comment">//-&gt; [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]</span>
+<pre><code class="lang-php">$array = [<span class="hljs-number">0</span>, <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>, <span class="hljs-number">6</span>, <span class="hljs-number">7</span>, <span class="hljs-number">8</span>, <span class="hljs-number">9</span>];
 
 <span class="hljs-keyword">for</span>($i = <span class="hljs-number">0</span>; $i &lt; count($array); $i++) {
     $array[$i] = pow($array[$i], <span class="hljs-number">2</span>);
@@ -577,17 +569,17 @@ $array; <span class="hljs-comment">//-&gt; [0, 1, 4, 9, 16, 25, 36, 49, 64, 81]<
 </code></pre>
 </section>
   </div>
-  <div class="slide hidden" id="slide-29">
+  <div class="slide hidden" id="slide-28">
     <section class="slide-content"><h3 id="square-each-element-in-the-array">Square each element in the array</h3>
 <p>FP way</p>
-<pre><code class="lang-php">$array = [<span class="hljs-number">0</span>, <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>, <span class="hljs-number">6</span>, <span class="hljs-number">7</span>, <span class="hljs-number">8</span>, <span class="hljs-number">9</span>]; <span class="hljs-comment">//-&gt; [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]</span>
+<pre><code class="lang-php">$array = [<span class="hljs-number">0</span>, <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>, <span class="hljs-number">6</span>, <span class="hljs-number">7</span>, <span class="hljs-number">8</span>, <span class="hljs-number">9</span>];
 </code></pre>
 </section>
   </div>
-  <div class="slide hidden" id="slide-30">
+  <div class="slide hidden" id="slide-29">
     <section class="slide-content"><h3 id="square-each-element-in-the-array">Square each element in the array</h3>
 <p>FP way</p>
-<pre><code class="lang-php">$array = [<span class="hljs-number">0</span>, <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>, <span class="hljs-number">6</span>, <span class="hljs-number">7</span>, <span class="hljs-number">8</span>, <span class="hljs-number">9</span>]; <span class="hljs-comment">//-&gt; [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]</span>
+<pre><code class="lang-php">$array = [<span class="hljs-number">0</span>, <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>, <span class="hljs-number">6</span>, <span class="hljs-number">7</span>, <span class="hljs-number">8</span>, <span class="hljs-number">9</span>];
 
 $square = <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">(int $num)</span>: <span class="hljs-title">int</span> </span>{
     <span class="hljs-keyword">return</span> pow($num, <span class="hljs-number">2</span>);
@@ -595,10 +587,10 @@ $square = <span class="hljs-function"><span class="hljs-keyword">function</span>
 </code></pre>
 </section>
   </div>
-  <div class="slide hidden" id="slide-31">
+  <div class="slide hidden" id="slide-30">
     <section class="slide-content"><h3 id="square-each-element-in-the-array">Square each element in the array</h3>
 <p>FP way</p>
-<pre><code class="lang-php">$array = [<span class="hljs-number">0</span>, <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>, <span class="hljs-number">6</span>, <span class="hljs-number">7</span>, <span class="hljs-number">8</span>, <span class="hljs-number">9</span>]; <span class="hljs-comment">//-&gt; [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]</span>
+<pre><code class="lang-php">$array = [<span class="hljs-number">0</span>, <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>, <span class="hljs-number">6</span>, <span class="hljs-number">7</span>, <span class="hljs-number">8</span>, <span class="hljs-number">9</span>];
 
 $square = <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">(int $num)</span>: <span class="hljs-title">int</span> </span>{
     <span class="hljs-keyword">return</span> pow($num, <span class="hljs-number">2</span>);
@@ -608,7 +600,7 @@ array_map($square, $array);  <span class="hljs-comment">//-&gt; [0, 1, 4, 9, 16,
 </code></pre>
 </section>
   </div>
-  <div class="slide hidden" id="slide-32">
+  <div class="slide hidden" id="slide-31">
     <section class="slide-content"><h3 id="square-each-element-in-the-array">Square each element in the array</h3>
 <p>FP way</p>
 <pre><code class="lang-php">$array = [<span class="hljs-number">0</span>, <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>, <span class="hljs-number">6</span>, <span class="hljs-number">7</span>, <span class="hljs-number">8</span>, <span class="hljs-number">9</span>]; <span class="hljs-comment">//-&gt; [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]</span>
@@ -623,14 +615,14 @@ $array; <span class="hljs-comment">//-&gt; [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]</span>
 </code></pre>
 </section>
   </div>
-  <div class="slide hidden" id="slide-33">
+  <div class="slide hidden" id="slide-32">
     <section class="slide-content"><h3 id="sum-of-elements-in-array">Sum of elements in array</h3>
 <p>OOP way</p>
 <pre><code class="lang-php">$sum = <span class="hljs-number">0</span>;
 </code></pre>
 </section>
   </div>
-  <div class="slide hidden" id="slide-34">
+  <div class="slide hidden" id="slide-33">
     <section class="slide-content"><h3 id="sum-of-elements-in-array">Sum of elements in array</h3>
 <p>OOP way</p>
 <pre><code class="lang-php">$sum = <span class="hljs-number">0</span>;
@@ -641,7 +633,7 @@ $array; <span class="hljs-comment">//-&gt; [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]</span>
 </code></pre>
 </section>
   </div>
-  <div class="slide hidden" id="slide-35">
+  <div class="slide hidden" id="slide-34">
     <section class="slide-content"><h3 id="sum-of-elements-in-array">Sum of elements in array</h3>
 <p>OOP way</p>
 <pre><code class="lang-php">$sum = <span class="hljs-number">0</span>;
@@ -654,19 +646,19 @@ $array; <span class="hljs-comment">//-&gt; [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]</span>
 </code></pre>
 </section>
   </div>
-  <div class="slide hidden" id="slide-36">
+  <div class="slide hidden" id="slide-35">
     <section class="slide-content"><h3 id="sum-of-elements-in-array">Sum of elements in array</h3>
 <p>FP way</p>
 </section>
   </div>
-  <div class="slide hidden" id="slide-37">
+  <div class="slide hidden" id="slide-36">
     <section class="slide-content"><h3 id="sum-of-elements-in-array">Sum of elements in array</h3>
 <p>FP way</p>
 <pre><code class="lang-php">array_sum(range(<span class="hljs-number">1</span>, <span class="hljs-number">10</span>));
 </code></pre>
 </section>
   </div>
-  <div class="slide hidden" id="slide-38">
+  <div class="slide hidden" id="slide-37">
     <section class="slide-content"><h3 id="sum-of-elements-in-array">Sum of elements in array</h3>
 <p>FP way</p>
 <pre><code class="lang-php">array_sum(range(<span class="hljs-number">1</span>, <span class="hljs-number">10</span>)); <span class="hljs-comment">//-&gt; 55</span>
@@ -674,8 +666,15 @@ $array; <span class="hljs-comment">//-&gt; [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]</span>
 <p><img src="static/magic.gif" alt="magic"></p>
 </section>
   </div>
+  <div class="slide hidden" id="slide-38">
+    <section class="slide-content"><h3 id="lambda">Lambda</h3>
+</section>
+  </div>
   <div class="slide hidden" id="slide-39">
     <section class="slide-content"><h3 id="lambda">Lambda</h3>
+<blockquote>
+<p>&quot;Anything that requires a temporary function that you probably will only use once.&quot;</p>
+</blockquote>
 </section>
   </div>
   <div class="slide hidden" id="slide-40">
@@ -721,6 +720,7 @@ $add_one = <span class="hljs-function"><span class="hljs-keyword">function</span
   </div>
   <div class="slide hidden" id="slide-44">
     <section class="slide-content"><h3 id="lambda-examples">Lambda examples</h3>
+<p><code>array_walk</code></p>
 <pre><code class="lang-php">
 
 $array = [<span class="hljs-number">0</span>, <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>, <span class="hljs-number">6</span>, <span class="hljs-number">7</span>, <span class="hljs-number">8</span>, <span class="hljs-number">9</span>];
@@ -732,27 +732,46 @@ array_walk($array, <span class="hljs-function"><span class="hljs-keyword">functi
 </section>
   </div>
   <div class="slide hidden" id="slide-45">
-    <section class="slide-content"><h3 id="closure-example">Closure example</h3>
+    <section class="slide-content"><h3 id="lambda-examples">Lambda examples</h3>
+<p><code>preg_replace_callback</code></p>
+<pre><code class="lang-php">
+$string  = <span class="hljs-string">'2014-02-22'</span>; <span class="hljs-comment">// our date string</span>
+
+$pattern = <span class="hljs-string">'~(\d{4})-(\d{2})-(\d{2})~'</span>; <span class="hljs-comment">// search pattern</span>
+
+<span class="hljs-comment">// the function call</span>
+$result = preg_replace_callback($pattern, <span class="hljs-string">'callback'</span>, $string);
+
+<span class="hljs-comment">// the callback function</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">callback</span><span class="hljs-params">(array $matches)</span>:<span class="hljs-title">string</span> </span>{
+    print_r($matches); <span class="hljs-comment">//-&gt; [0] =&gt; 2014-02-22 [1] =&gt; 2014 [2] =&gt; 02 [3] =&gt; 22</span>
+    <span class="hljs-keyword">return</span> $matches[<span class="hljs-number">3</span>].<span class="hljs-string">'-'</span>.$matches[<span class="hljs-number">2</span>].<span class="hljs-string">'-'</span>.$matches[<span class="hljs-number">1</span>];
+}
+
+<span class="hljs-keyword">echo</span> $result; <span class="hljs-comment">//-&gt; 22-02-2014</span>
+</code></pre>
 </section>
   </div>
   <div class="slide hidden" id="slide-46">
     <section class="slide-content"><h3 id="closure-example">Closure example</h3>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-47">
+    <section class="slide-content"><h3 id="closure-example">Closure example</h3>
 <pre><code class="lang-php">
-
 $name = <span class="hljs-string">'PHP'</span>;
 
 $my_first_closure = <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> <span class="hljs-title">use</span> <span class="hljs-params">($name)</span>:<span class="hljs-title">string</span> </span>{
     <span class="hljs-keyword">return</span> <span class="hljs-string">"The first closure written in $name"</span>;
 };
 
-<span class="hljs-keyword">echo</span> $my_first_closure();
+<span class="hljs-keyword">echo</span> $my_first_closure(); <span class="hljs-comment">//-&gt; The first closure written in PHP</span>
 </code></pre>
 </section>
   </div>
-  <div class="slide hidden" id="slide-47">
+  <div class="slide hidden" id="slide-48">
     <section class="slide-content"><h3 id="recursion-with-lambda-and-closure">Recursion with lambda and closure</h3>
 <pre><code class="lang-php">
-
 $factorial = <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(int $n)</span> <span class="hljs-title">use</span> <span class="hljs-params">(&amp;$factorial)</span>:<span class="hljs-title">int</span> </span>{
     <span class="hljs-keyword">if</span>($n == <span class="hljs-number">1</span>) <span class="hljs-keyword">return</span> <span class="hljs-number">1</span>;
     <span class="hljs-keyword">return</span> $factorial( $n - <span class="hljs-number">1</span> ) * $n;
@@ -760,7 +779,18 @@ $factorial = <span class="hljs-function"><span class="hljs-keyword">function</sp
 </code></pre>
 </section>
   </div>
-  <div class="slide hidden" id="slide-48">
+  <div class="slide hidden" id="slide-49">
+    <section class="slide-content"><h3 id="recursion-with-lambda-and-closure">Recursion with lambda and closure</h3>
+<pre><code class="lang-php">
+$factorial = <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(int $n)</span> <span class="hljs-title">use</span> <span class="hljs-params">(&amp;$factorial)</span>:<span class="hljs-title">int</span> </span>{
+    <span class="hljs-keyword">if</span>($n == <span class="hljs-number">1</span>) <span class="hljs-keyword">return</span> <span class="hljs-number">1</span>;
+    <span class="hljs-keyword">return</span> $factorial( $n - <span class="hljs-number">1</span> ) * $n;
+};
+</code></pre>
+<p><img src="static/recursion.gif" alt="recursion"></p>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-50">
     <section class="slide-content"><h1 id="d-labs">D·Labs</h1>
 <h2 id="daniil-popov-dlabs-si"><a href="mailto:Daniil.Popov@dlabs.si">Daniil.Popov@dlabs.si</a></h2>
 <p><img src="static/dlabs.png" style="position:absolute;left: 0;"></p>

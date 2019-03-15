@@ -15,7 +15,7 @@ controls: false
 --
 
 # PHP:
-## **PH**_unctional_ **P**_rogramming_
+## **PH**unctional **P**rogramming
 
 --
 
@@ -154,19 +154,7 @@ Closure was added to the language
 
 **PHP 7**
 
-"strong typization" strict_type was added to language
-
---
-
-### Language versions
-
-**PHP 5.3**
-
-Closure was added to the language
-
-**PHP 7**
-
-"strong typization" strict_type was added to language
+"strong typization" strict_type was added to the language
 
 --
 
@@ -187,7 +175,7 @@ Closure was added to the language
 OOP way
 
 ```php
-$array = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]; //-> [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+$array = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
 ```
 
 --
@@ -197,7 +185,7 @@ $array = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]; //-> [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 OOP way
 
 ```php
-$array = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]; //-> [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+$array = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
 
 for($i = 0; $i < count($array); $i++) {
 	$array[$i] = pow($array[$i], 2);
@@ -211,7 +199,7 @@ for($i = 0; $i < count($array); $i++) {
 OOP way
 
 ```php
-$array = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]; //-> [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+$array = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
 
 for($i = 0; $i < count($array); $i++) {
 	$array[$i] = pow($array[$i], 2);
@@ -227,7 +215,7 @@ $array; //-> [0, 1, 4, 9, 16, 25, 36, 49, 64, 81]
 FP way
 
 ```php
-$array = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]; //-> [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+$array = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
 ```
 
 --
@@ -237,7 +225,7 @@ $array = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]; //-> [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 FP way
 
 ```php
-$array = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]; //-> [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+$array = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
 
 $square = function (int $num): int {
 	return pow($num, 2);
@@ -250,7 +238,7 @@ $square = function (int $num): int {
 FP way
 
 ```php
-$array = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]; //-> [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+$array = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
 
 $square = function (int $num): int {
 	return pow($num, 2);
@@ -355,6 +343,12 @@ array_sum(range(1, 10)); //-> 55
 
 > "Anything that requires a temporary function that you probably will only use once."
 
+--
+
+### Lambda
+
+> "Anything that requires a temporary function that you probably will only use once."
+
 > "Lambdas can be used as "short-lived" functions."
 
 --
@@ -393,6 +387,8 @@ echo $add_one(4); // -> 5
 
 ### Lambda examples
 
+`array_walk`
+
 ```php
 
 
@@ -405,6 +401,30 @@ array_walk($array, function(&$value, $key) {
 
 --
 
+### Lambda examples
+
+`preg_replace_callback`
+
+```php
+
+$string  = '2014-02-22'; // our date string
+
+$pattern = '~(\d{4})-(\d{2})-(\d{2})~'; // search pattern
+
+// the function call
+$result = preg_replace_callback($pattern, 'callback', $string);
+
+// the callback function
+function callback(array $matches):string {
+    print_r($matches); //-> [0] => 2014-02-22 [1] => 2014 [2] => 02 [3] => 22
+    return $matches[3].'-'.$matches[2].'-'.$matches[1];
+}
+
+echo $result; //-> 22-02-2014
+```
+
+--
+
 ### Closure example
 
 --
@@ -413,14 +433,13 @@ array_walk($array, function(&$value, $key) {
 
 ```php
 
-
 $name = 'PHP';
 
 $my_first_closure = function() use ($name):string {
     return "The first closure written in $name";
 };
 
-echo $my_first_closure();
+echo $my_first_closure(); //-> The first closure written in PHP
 ```
 
 --
@@ -429,12 +448,25 @@ echo $my_first_closure();
 
 ```php
 
+$factorial = function(int $n) use (&$factorial):int {
+    if($n == 1) return 1;
+    return $factorial( $n - 1 ) * $n;
+};
+```
+--
+
+### Recursion with lambda and closure
+
+```php
 
 $factorial = function(int $n) use (&$factorial):int {
     if($n == 1) return 1;
     return $factorial( $n - 1 ) * $n;
 };
 ```
+
+![recursion](static/recursion.gif)
+
 --
 
 # D·Labs

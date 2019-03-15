@@ -1,6 +1,6 @@
 title: PHunctional Programming
 output: index.html
-controls: false
+controls: true
 
 --
 
@@ -466,6 +466,15 @@ $factorial = function(int $n) use (&$factorial):int {
 ```
 
 ![recursion](static/recursion.gif)
+
+--
+
+### Literature
+
+- [PHP Pandas](https://daylerees.com/php-pandas/) : php basics, closures, opp/fp
+- [Functional Programming in PHP](https://www.amazon.com/Functional-Programming-PHP-architect-guide/dp/1940111056) : fp basics, php functional features, fp patterns
+- [Learn You a Haskell for Great Good!](http://learnyouahaskell.com/) : pure functional programming in haskell
+- [O Haskell](https://github.com/jhenahan/ohaskell-translations) : O haskell in human language
 
 --
 

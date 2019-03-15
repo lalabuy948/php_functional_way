@@ -335,17 +335,17 @@ array_sum(range(1, 10)); //-> 55
 
 --
 
-### Lambda
+### `λ` Lambda
 
 --
 
-### Lambda
+### `λ` Lambda
 
 > "Anything that requires a temporary function that you probably will only use once."
 
 --
 
-### Lambda
+### `λ` Lambda
 
 > "Anything that requires a temporary function that you probably will only use once."
 
@@ -353,7 +353,7 @@ array_sum(range(1, 10)); //-> 55
 
 --
 
-### Lambda
+### `λ` Lambda
 
 > "Anything that requires a temporary function that you probably will only use once."
 
@@ -365,13 +365,13 @@ array_sum(range(1, 10)); //-> 55
 
 --
 
-### Lambda examples
+### `λ` Lambda examples
 
 `array_walk()`, `usort()`, `preg_replace_callback()`
 
 --
 
-### Lambda examples
+### `λ` Lambda examples
 
 ```php
 
@@ -385,7 +385,7 @@ echo $add_one(4); // -> 5
 
 --
 
-### Lambda examples
+### `λ` Lambda examples
 
 `array_walk`
 
@@ -401,7 +401,7 @@ array_walk($array, function(&$value, $key) {
 
 --
 
-### Lambda examples
+### `λ` Lambda examples
 
 `preg_replace_callback`
 

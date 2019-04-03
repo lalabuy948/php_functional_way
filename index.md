@@ -1,6 +1,6 @@
 title: PHunctional Programming
 output: index.html
-controls: true
+controls: false
 
 --
 
@@ -155,6 +155,21 @@ Closure was added to the language
 **PHP 7**
 
 "strong typization" strict_type was added to the language
+
+--
+
+### Functional programming is so cool
+
+--
+
+### Functional programming is so cool
+
+- No side effect
+- Modular out of the box
+- Simpler to test
+- Thread safety
+- More readable
+- Maintainable code
 
 --
 

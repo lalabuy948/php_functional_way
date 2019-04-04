@@ -1,6 +1,6 @@
 title: PHunctional Programming
 output: index.html
-controls: false
+controls: true
 
 --
 

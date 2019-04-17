@@ -1,6 +1,20 @@
 title: PHunctional Programming
 output: index.html
-controls: true
+controls: false
+
+--
+
+# PHP
+
+--
+
+# PHP: 
+## Personal Home Page
+
+--
+
+# PHP: 
+## ~~Personal Home Page~~
 
 --
 
@@ -20,6 +34,12 @@ controls: true
 --
 
 ### Functional programming? 
+
+--
+
+### Functional programming? 
+
+#### `input -> f() -> output`
 
 --
 

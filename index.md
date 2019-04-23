@@ -402,7 +402,7 @@ array_sum(range(1, 10)); //-> 55
 
 ### `λ` Lambda examples
 
-`array_walk()`, `usort()`, `preg_replace_callback()`
+`array_walk()`, `array_map()`, `array_filter()`, `usort()`, `preg_replace_callback()`
 
 --
 

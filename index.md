@@ -154,6 +154,31 @@ World -> (World, A) <img src="static/hard.gif" style="position:absolute;right: 2
 
 --
 
+### Functional programming is so cool
+
+--
+
+### Functional programming is so cool
+
+- No side effect
+- Modular out of the box
+- Simpler to test
+- Thread safety
+- More readable
+- Maintainable code
+
+--
+
+### Functional programming is so cool
+
+<img src="https://www.explainxkcd.com/wiki/images/5/58/functional.png" width="400" style="margin-left: 25%">
+
+--
+
+<img src="static/fpmem.png" width="400" style="margin-left: 25%">
+
+--
+
 ### Language versions
 
 --
@@ -175,25 +200,6 @@ Closure was added to the language
 **PHP 7**
 
 "strong typization" strict_type was added to the language
-
---
-
-### Functional programming is so cool
-
---
-
-### Functional programming is so cool
-
-- No side effect
-- Modular out of the box
-- Simpler to test
-- Thread safety
-- More readable
-- Maintainable code
-
---
-
-<img src="static/fpmem.png" width="400" style="margin-left: 25%">
 
 --
 

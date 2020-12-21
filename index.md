@@ -62,13 +62,13 @@ controls: false
 
 ### State of the world 
 
-> "An interactive program is a pure function that takes the current 'state of the world' as its argument and produces a modified world as result"
+> "An interactive program is a pure function that takes the current 'state of the world' as its argument and produces a modified world as result" Paweł Szulc
 
 --
 
 ### State of the world 
 
-> "An interactive program is a pure function that takes the current 'state of the world' as its argument and produces a modified world as result"
+> "An interactive program is a pure function that takes the current 'state of the world' as its argument and produces a modified world as result" Paweł Szulc
 
 > "Don't try to track real-world state in your code. Instead take it as an argument, since only the world knows what state it's in." @runarorama
 
@@ -76,7 +76,7 @@ controls: false
 
 ### State of the world 
 
-> "An interactive program is a pure function that takes the current 'state of the world' as its argument and produces a modified world as result"
+> "An interactive program is a pure function that takes the current 'state of the world' as its argument and produces a modified world as result" Paweł Szulc
 
 > "Don't try to track real-world state in your code. Instead take it as an argument, since only the world knows what state it's in." @runarorama
 
@@ -86,7 +86,7 @@ World -> (World, A)
 
 ### State of the world 
 
-> "An interactive program is a pure function that takes the current 'state of the world' as its argument and produces a modified world as result"
+> "An interactive program is a pure function that takes the current 'state of the world' as its argument and produces a modified world as result" Paweł Szulc
 
 > "Don't try to track real-world state in your code. Instead take it as an argument, since only the world knows what state it's in." @runarorama
 
@@ -517,11 +517,16 @@ $factorial = function(int $n) use (&$factorial):int {
 - [Learn You a Haskell for Great Good!](http://learnyouahaskell.com/) : pure functional programming in haskell
 - [O Haskell](https://github.com/jhenahan/ohaskell-translations) : O haskell in human language
 
---
+<!-- --
 
-# D·Labs
+# Eurosender
+## Daniil.Popov@eurosender.com -->
+
+<!-- <img src="static/dlabs.png" style="position:absolute;left: 0;"> -->
+
+<!-- # D·Labs
 ## Daniil.Popov@dlabs.si
 
-<img src="static/dlabs.png" style="position:absolute;left: 0;">
+<img src="static/dlabs.png" style="position:absolute;left: 0;"> -->
 
 

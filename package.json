@@ -4,12 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "node_modules/.bin/cleaver index.md"
+    "build": "node_modules/.bin/cleaver index.md",
+    "serve": "node_modules/.bin/serve ."
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "cleaver": "^0.8.7"
+  },
+  "dependencies": {
+    "serve": "^11.3.2"
   }
 }
